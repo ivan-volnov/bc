@@ -1,6 +1,7 @@
 # scale=6;
 pi=4*a(1);
 e=e(1);
+phi=(1+sqrt(5))/2 # golden ratio
 
 define sin(x) {
     if (x == pi/2) {
@@ -228,4 +229,26 @@ define rad(deg) {
 
 define deg(rad) {
     return rad/pi*180;
+}
+
+define mod(x, y) {
+    s = scale;
+    scale = 0;
+    ret = x % y;
+    scale = s;
+    return ret;
+}
+
+define min(x, y) {
+    if (x < y) {
+        return x;
+    }
+    return y;
+}
+
+define max(x, y) {
+    if (x > y) {
+        return x;
+    }
+    return y;
 }
