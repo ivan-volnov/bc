@@ -2,6 +2,7 @@
 pi=4*a(1);
 e=e(1);
 phi=(1+sqrt(5))/2 # golden ratio
+inch=25.4;
 
 define sin(x) {
     if (x == pi/2) {
