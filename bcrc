@@ -253,3 +253,7 @@ define max(x, y) {
     }
     return y;
 }
+
+define time(h, m, s) {
+    return 60 * (60 * h + m) + s;
+}
